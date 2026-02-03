@@ -23,6 +23,12 @@ describe('AppController (e2e)', () => {
     await app.init();
   });
 
+  afterEach(async () => {
+    if (app) {
+      await app.close();
+    }
+  });
+
   it('creates and fetches a board', async () => {
     const createResponse = await request(app.getHttpServer())
       .post('/boards')
