@@ -32,7 +32,7 @@ $ npm run test:cov
 
 ## Docker
 
-You can also run a project in docker containerm, but make sure you have docker installed on your machine.
+You can also run a project in docker container, but make sure you have docker installed on your machine.
 
 ```bash
 docker compose up --build
